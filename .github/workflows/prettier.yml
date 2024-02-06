@@ -6,6 +6,8 @@ jobs:
   prettier:
     name: Prettier
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
 
     steps:
       - name: Prettier
