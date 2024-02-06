@@ -1,0 +1,17 @@
+name: Prettier
+
+on: push
+
+jobs:
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Prettier
+        uses: garnercorp/build-actions/prettier@updates
+        with:
+          prettier-options: "--write"
+          push-to-remote: true
+          update-git_blame_ignore_revs: true
+          checkout-ssh-key: "${{ secrets.CHECK_SPELLING }}"
