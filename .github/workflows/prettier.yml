@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Prettier
-        uses: garnercorp/build-actions/prettier@updates
+        uses: garnercorp/build-actions/prettier@prettier
         with:
           prettier-options: "--write"
           push-to-remote: true
